@@ -1,11 +1,19 @@
 {
   "extends": "@tsconfig/node16/tsconfig.json",
+  "ts-node": {
+    "files": true,
+  },
+  "include": [
+    "src",
+    "typings"
+  ],
   "compilerOptions": {
-    "lib": [
-      "es2021",
+    "allowJs": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
     ],
-    "sourceMap": true,
     "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "dist",
   }
 }
