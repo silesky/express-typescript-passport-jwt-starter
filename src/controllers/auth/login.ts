@@ -24,7 +24,7 @@ export const login: RequestHandler<never, LoginUserResponseBody> = async (
       );
       res.json({
         message:
-          'Login success! Now you can make calls with this token if you include it as a cookie',
+          'Login success! Now you can make calls with this bearer token by including it in your request header.',
         id: user.id,
         token: token,
       });

@@ -1,7 +1,8 @@
 import { createServer } from '../../src/server/create-server';
 import getPort from 'get-port';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { Role, UsersModel } from '../../src/data/users';
+import { UsersModel } from '../../src/data/users';
+import { Role } from '../../src/types';
 
 let server: any;
 beforeAll(async () => {
